@@ -1,0 +1,279 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rishi Shah 
+%
+%
+% Edited by Sam McDevitt for Personal Use
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage{hyperref}
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Sam McDevitt} % Your name
+\address{108 Starr Ave. Apt 117, Starkville, MS 39759} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{(601)668-6782 \\ sam1123@msstate.edu} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Bachelor of Science in Computer Engineering} \hfill {\bf May 2020} 
+\\ {\em Mississippi State University, Starkville, MS}
+\begin{itemize}
+    \item 3.86/4.00 Undergraduate Cumulative GPA
+    \item 4.00/4.00 Accelerated Graduate Program GPA
+\end{itemize}
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection}
+
+%--------------------------------------------------------------------------------
+%    Research and work Experience
+%-----------------------------------------------------------------------------------------------
+%Research
+\begin{rSection}{Research and Work Experience}
+{\bf Mississippi State University, Institute for Clean Energy Technology}
+\\Jay McCown, Ron Utz, August 2017 - Present, Mississippi State University, MS, USA
+\\{\underline{Autonomous Robotic Platforms for Radioactive Munition Cleanup}}
+\smallskip
+\\{\em Objective}: Design autonomous robotic systems to detect and record GPS data of depleted uranium munitions. These systems are required to speed up the clean up process because multiple autonomous vehicles are faster than walk over surveys. The robotic systems also make the clean up safer because of the amount of un-exploded ordinance in the field. 
+\begin{itemize}
+    \item Designed robotic controls systems in Eagle to allow users to stop the autonomous driving mode and start manual control. Designs included using the PIC32, LINX-HUM900-PRO RF communication module, UART to RS232 ICs, and I2C joystick. 
+    \item Designed power systems convert the 24V DC voltage from the batteries to other levels for various devices including LIDAR and GPS.
+    \item Prototyped designs using in lab CNC mills to print two sided circuit boards. Soldered and debugged all hardware produced in the labs by hand and with the reflow oven.
+    \item Programmed emergency stop and robotic controls systems in MPLAB using C for the PIC32. Programs included UART, RS-232, and I2C communication protocols, GPIO, and timers. 
+    \item Learned the basics of the Robotic Operating System (ROS) and how it interacts with devices, such as the LIDAR and GPS, for hardware design. 
+    \item Wrote Python programs to record data from Geiger counters during the walk over data collection in Yuma, Arizona. 
+    \item Created a map in a geographic imaging system of the location in Yuma, Arizona to be used while in the field without internet data. 
+    \item Performed critical hardware debugging in Yuma, Arizona so all of the robotic platforms worked for testing. 
+    \item Assisted with database set up and design. Wrote SQL commands for use with the QGIS software to calculate a linear path.
+    \item Studied to take the Part 107 UAS Pilot Test in order to be the Remote Pilot in Command for drone testing operations. 
+\end{itemize}
+{\em Conclusion}: The robotic platforms were tested in Yuma, Arizona, and were successful in recording the intensity data of the radioactive munitions. Further implementations of the design require an unmanned aerial system  of the systems getting stuck in the terrain. The project continues because changes need to be made to the systems to increase efficiency and communication between robots. 
+
+\newpage
+
+%Work Experience
+{\bf Kopis Mobile}\\
+Dr. Henry Jones, Josua Lunn, May 2017 - August 2017, Flowood, MS, USA
+\\{\underline{Open-Source Odoo Enterprise Resource Management Debugging}}
+\smallskip
+\\{\em Objective}: Improve inventory management and functionality of the open source Odoo ERP. 
+\begin{itemize}
+    \item  Edited open source software and company SQL databases to align with the companies needs. 
+    \item  Developed Python scripts to recursively fix mistakes that arose from a transition of ERP versions.  
+    \item  Cleaned the SQL inventory databases of unused inventory data using different programming languages including Python, SQL, and C. 
+\end{itemize}
+{\em Conclusion}: The broken database items were recognized by the ERP, The fix allowed the ERP to work as intended.
+
+
+{\underline{Application to Import CAD Models into SolidWorks and Orcad}}
+\smallskip
+\\{\em Objective}: Ease three dimensional modeling in SolidWorks and circuit board design in Orcad by creating an application to use inventory part models. 
+\begin{itemize}
+    \item Created a application using Python to find errors in the ERP database, easily search parts by specific criteria, and add and remove parts from inventory. 
+    \item Deployed a custom web-scraping tool written in Python to pull 3D models of McMaster-Carr, and store them in the database. 
+    \item Wrote an add-in for SolidWorks in C\# to directly add 3D models from inventory to assembly files with the click of a button. 
+\end{itemize}
+{\em Conclusion}: Developed a working application that engineers use to speed up the design process and organize their data. 
+
+
+
+{\underline{Raspberry Pi Security Solution}}
+\smallskip
+\\{\em Objective}: Display information about the current state of the back doors of the building to the front door. Allowed for the last employee leaving to make sure the back doors were closed and locked.
+\begin{itemize}
+    \item Created a wireless communication system between Raspberry Pis; allowing them to communicate across the building. 
+    \item Wrote Python code to detect the state of the doors, to communicate between devices, and to display information on an LCD screen. 
+    \item Modeled and 3D printed cases for the Raspberry Pis and LCD screen using SolidWorks.
+\end{itemize}
+{\em Conclusion}: Created a working system to monitor the back door activity including information on if the back doors were opened during that day.  
+
+%Personal Project - Hydroponics Farm
+{\bf Personal Project}
+\\Jake Griesmer, Spencer Barnes, Spring 2018, Mississippi State University, MS, USA
+\\{\underline{Automated Hydroponics Farm}}
+\smallskip
+\\{\em Objective}: Automate a hydroponics farm by monitoring the PH levels of the water, changing the PH levels of the water if they are incorrect, and timing lights to turn on for the plants. 
+\begin{itemize}
+    \item Created a program to read PH levels of the water and calculate how much buffer to pump.  
+    \item Designed a water pumping system to effectively pump a PH buffer into the farm's tank of water. 
+    \item Presented the design process and a working demo in our microprocessors course
+\end{itemize}
+{\em Conclusion}: Completed an Automated Hydroponics Farm and received bonus credit for microprocessors course. 
+
+
+
+\end{rSection}
+\newpage
+%----------------------------------------------------------------------------------------
+%	Publications Section
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Publications}
+Unz, R., McCown, J., McDevitt, S., Neal, D., Hartzburg, J., Randle, A., Larson, S., Ballard. J., Waggoner. C.,   2019.  Autonomous Radiological Survey Systems for Locating Fired Depleted Uranium Munitions. Waste Management Conference 2019. {\em Approved}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% Leadership Section
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Leadership Experience}
+Laboratory Teaching Assistant for Microprocessors Course \hfill Spring 2019 
+\begin{itemize}
+    \item Assisted students with lab activities related to the PIC 24 and Assembly programming
+    \item Helped students understand complex topics in microprocessors
+    \item Debugged students labs when a student got confused or ran into an unexpected error. 
+    \item Attended weekly meetings with professors to discuss student performance in lab and in class.
+    \item Experienced in complex problem solving relating to random errors in student's lab assignments. \\
+\end{itemize}
+
+Department of Electrical and Computer Engineering Ambassador \hfill Fall 2017 - Present
+\begin{itemize}
+    \item Gave tours to perspective students and their parents in order to give them a better view of what the university is like
+    \item Answered questions at preview days so people could have a better understanding of the degree program
+    \item Attended advisory board meetings as a student representative of the department
+    \item Encouraged high school students to consider going into the field of Electrical and Computer engineering and STEM fields in general.\\ 
+\end{itemize}
+
+Recruiting Coordinator for the Mississippi State Chapter of IEEE \hfill Spring 2019
+\begin{itemize}
+    \item Informed students about the benefits of joining IEEE at events. 
+    \item Encouraged students to come to IEEE events in order to learn more about the organization and to make friends within the department
+    \item Assisted the publicity chair in making in class announcements to advertise for events. 
+    \item Created Materials to be passed out and presented to encourage students to join the organization\\
+\end{itemize}
+
+Publicity Chair for the Mississippi State Chapter of IEEE \hfill Spring 2018 - Fall 2018
+\begin{itemize}
+    \item Created and distributed fliers to advertise for upcoming IEEE events. 
+    \item Made in class announcements to advertise for upcoming IEEE events. 
+    \item Organized an order of T-shirts for the club to sell as a fundraiser. \\
+\end{itemize}
+
+Dr. Keenum's Leadership Seminar \hfill Fall 2018
+\begin{itemize}
+    \item Attended lectures on leadership given by the university president
+    \item Listened to presentations from leaders around the country. 
+    \item Learned valuable information on how to be an effective leader in the work force. 
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	Extra Cirriculars
+%----------------------------------------------------------------------------------------
+\end{rSection}
+
+\begin{rSection}{Campus Involvement} \itemsep -3pt
+\item Shackouls Honors College  \hfill Fall 2016 - Present
+\item Undergraduate Laboratory Teaching Assistant \hfill Spring 2019
+\item Institute of Electrical and Electronics Engineers (IEEE) \hfill Spring 2017 - Present
+\item Department of Electrical and Computer Engineering Ambassador  \hfill Spring 2018 - Present
+\item STEMpact  \hfill Spring 2019
+\item Eco Car 3 Challenge  \hfill Spring 2017
+\item Famous Maroon Band \hfill Fall 2016 - Spring 2018
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Honors and Awards
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Honors and Awards} 
+\item Tau Beta Pi Engineering Honor Society \hfill Spring 2019
+\item Phi Kappa Phi Honor Society \hfill        Spring 2018 - Present
+\item Gamma Beta Phi Honor Society \hfill       Fall 2017 - Spring 2018
+\item Alpha Lambda Delta Honor Society \hfill   2017
+\item Anthony \& Tonya Wilson Endowed Scholarship \hfill Spring 2018 - Present
+\item Eva P. Hosmer Engineering Scholarship \hfill Spring 2018 - Present
+\item The Roberto Puon Endowed Memorial Scholarship \hfill Spring 2016 - Spring 2018
+\item Academic Excellence Scholarship \hfill Fall 2016 - Present
+\item Gloria \& Doug Marchant Legacy Scholarship \hfill Spring 2016 - Present
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Technical Strengths}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Modeling and Analysis \ & Autodesk Inventor, SolidWorks, PSpice, Eagle, Orcad \\
+Software \& Tools & Altera Quartus, Xilinx Vivado, MPLAB, Visual Studio Code,\\
+                    &  MySQL, QGIS, GIT, MPLAB In Circuit Debugger (ICD) 4 \\
+Programming Languages & C, C\+++, C\#, Python, Java, HTML, CSS, JavaScript, SQL, LaTex, \\
+                        & MIPS Assembly, PIC24 Assembly, Verilog, MATLAB, Mathematica\\
+Manufacturing Tools & 3D printers, CNC Mills, Laser Cutters \\
+Electrical Skills \& Tools & PCB Design, Soldering, Wire Making, Oscilloscopes,  \\
+                & Multi-meters, Function Generators, Reflow Ovens \\
+Operating Systems & Linux, Windows, MacOS, Robotic Operating System (ROS) \\
+\end{tabular}
+
+
+
+%----------------------------------------------------------------------------------------
+%	Relevant Coursework
+%----------------------------------------------------------------------------------------
+\end{rSection}
+
+\begin{rSection}{Relevant Coursework}
+\begin{tabular}{ @{} >{}l @{\hspace{6ex}} l @{\hspace{6ex}} l }
+Graduate Level Courses -  & Digital System Design & Computer Architecture \\
+Undergraduate Level Courses - & Microprocessors & Intro - Advanced Circuits \\
+&                               Digital Devices & Electromagnetics 1 \& 2 \\
+&                               Signals and Systems & Data and Computer Networks \\
+&                               Intermediate Programming & Data Structures\\
+&                               Discrete Structures &  Operating Systems\\
+&                               Algorithms\\
+\end{tabular}
+\end{rSection}
+\newpage
+
+
+%----------------------------------------------------------------------------------------
+%	Important Links
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Important Links}
+
+\begin{tabular}{ @{} >{}l @{\hspace{6ex}} l }
+Linkedin - & {\href{https://www.linkedin.com/in/sammcdevitt/}{https://www.linkedin.com/in/sammcdevitt/}}\\
+\\
+Personal Github - & {\href{https://github.com/sammcdsam}{https://github.com/sammcdsam}}\\
+\\
+GroceryBudy Github - & {\href{https://github.com/GroceryBuddies/GroceryBuddy}{https://github.com/GroceryBuddies/GroceryBuddy}}\\
+ & This Github repository contains a website designed as a project for a\\ 
+ & distributed client server class. The team received an A for this project.
+
+\end{tabular}
+
+\end{rSection}
+
+\end{document}
